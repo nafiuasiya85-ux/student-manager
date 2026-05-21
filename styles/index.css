@@ -1,0 +1,67 @@
+ main {
+    width: 600px;
+    background-color: #E5EEE4;
+    margin-inline: auto;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+
+ main h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #462C7D;
+ }
+
+ main > div {
+    display: flex;
+    gap: 20px;
+    background-color: #D552A3;
+    height: 50px;
+    align-items: center;
+    padding-inline: 20px;
+    border-radius: 5px;
+ }
+
+  main > div > label {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+  }
+
+ main > div > input {
+    flex: 1;
+    height: 80%;
+    padding-inline: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+ }
+
+ main table {
+    min-width: 100%;
+    table-layout: fixed;
+ }
+
+ table thead {
+    background-color: #D552A3;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+ }
+
+ thead tr {
+    overflow: hidden;
+ }
+
+ th, td {
+    padding: 10px;
+ }
+
+ tbody tr:nth-child(even) {
+  background-color: white;
+}
