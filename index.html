@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/index.css" />
-
 </head>
 
 <body>
@@ -39,7 +38,8 @@
                     <td>Male</td>
                     <td>15</td>
                     <td>
-                        <a href="edit-student.html?name=John%20Doe&class=10A&gender=Male&age=15"><button type="button">
+                        <a href="edit-student.html?name=John%20Doe&class=10A&gender=Male&age=15">
+                            <button type="button">
                                 <span class="material-symbols-outlined">
                                     edit
                                 </span>
@@ -51,10 +51,37 @@
                         </button>
                     </td>
                 </tr>
-                
             </tbody>
         </table>
+
+        <form>
+            <h1>Add Student</h1>
+            <div>
+                <label for="student-name">Student Name</label>
+                <input id="student-name" name="studentName" type="text">
+            </div>
+            <div>
+                <label for="student-class">Class</label>
+                <input id="student-class" name="studentClass" type="text">
+            </div>
+            <div>
+                <label for="student-gender">Gender</label>
+                <select id="student-gender" name="studentGender">
+                    <option value="">Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="student-age">Age</label>
+                <input id="student-age" name="studentAge" type="number" min="1">
+            </div>
+            <button type="submit">Create Student</button>
+        </form>
     </main>
+    <div id="fruits">
+    </div>
     <script src="js/index.js"></script>
 </body>
 

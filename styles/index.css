@@ -1,67 +1,93 @@
- main {
-    width: 600px;
-    background-color: #E5EEE4;
-    margin-inline: auto;
-    margin-top: 50px;
-    padding: 40px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
- }
+ main>div {
+   display: flex;
+   gap: 20px;
+   background-color: #D552A3;
+   height: 50px;
+   align-items: center;
+   padding-inline: 20px;
+   border-radius: 5px;
+}
 
- main h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: #462C7D;
- }
+main>div>label {
+   font-size: 1.2rem;
+   color: white;
+   font-weight: 500;
+}
 
- main > div {
-    display: flex;
-    gap: 20px;
-    background-color: #D552A3;
-    height: 50px;
-    align-items: center;
-    padding-inline: 20px;
-    border-radius: 5px;
- }
+main>div>input {
+   flex: 1;
+   height: 80%;
+   padding-inline: 10px;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   font-weight: 500;
+}
 
-  main > div > label {
-    font-size: 1.2rem;
-    color: white;
-    font-weight: 500;
-  }
+main table {
+   min-width: 100%;
+   table-layout: fixed;
+}
 
- main > div > input {
-    flex: 1;
-    height: 80%;
-    padding-inline: 10px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: 500;
- }
+table thead {
+   background-color: #D552A3;
+   color: white;
+   padding: 20px;
+   border-radius: 20px;
+   overflow: hidden;
+}
 
- main table {
-    min-width: 100%;
-    table-layout: fixed;
- }
+thead tr {
+   overflow: hidden;
+}
 
- table thead {
-    background-color: #D552A3;
-    color: white;
-    padding: 20px;
-    border-radius: 20px;
-    overflow: hidden;
- }
+th,
+td {
+   padding: 10px;
+}
 
- thead tr {
-    overflow: hidden;
- }
+tbody tr:nth-child(even) {
+   background-color: white;
+}
 
- th, td {
-    padding: 10px;
- }
+form {
+   margin-top: 50px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-items: stretch;
+   background-color: azure;
+   padding: 40px;
+}
 
- tbody tr:nth-child(even) {
-  background-color: white;
+form > h1 {
+   margin-bottom: 20px;
+}
+
+form > div {
+   display: flex;
+   align-items: center;
+}
+
+form > div > label {
+   width: 120px;
+   font-weight: 500;
+}
+
+form > div > input,
+form > div > select {
+   flex: 1;
+   height: 40px;
+   padding-inline: 10px;
+}
+
+form > button {
+   background-color: #D552A3;
+   height: 40px;
+   border: none;
+   border-radius: 10px;
+   color: white;
+   font-size: 1.2rem;
+   font-weight: 500;
+   margin-top: 20px;
 }
